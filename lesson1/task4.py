@@ -39,6 +39,8 @@ def sign_in1(base_of_users, user_name, user_password):
         return 'Вы ввели не существуещего пользователя'
 
 
+# Второе решение
+# Сложность - O(N)
 def sign_in2(base_of_users, user_name, user_password):
     for key, value in base_of_users.items:
         if key == user_name:
@@ -50,3 +52,6 @@ def sign_in2(base_of_users, user_name, user_password):
                 return 'Пароль неверный'
         else:
             return 'Вы ввели не существущего пользователя'
+
+# Первый вариант решения является оптимальным,
+# так как эффективность куда выше и является константной.
