@@ -64,7 +64,7 @@ def list_pop(list1):
 @count_time_decorator
 def dict_pop(dictionary):
     for i in range(100000):
-        dictionary.pop(i)   # Сложность -  O(N)
+        dictionary.pop(i)   # Сложность -  O(1)
 
 
 list_pop(my_list) # Значительно медленнее, чем со словарем
